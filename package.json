@@ -1,0 +1,17 @@
+{
+  "name": "website-ci-pipeline",
+  "version": "1.0.0",
+  "description": "Simple static website to demonstrate a CI pipeline",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js",
+    "test": "jest --runInBand",
+    "start": "node build.js && npx http-server ./dist -p 8080"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "http-server": "^14.1.1"
+  }
+}
